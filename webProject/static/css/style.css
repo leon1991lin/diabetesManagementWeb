@@ -1,0 +1,38 @@
+body header {
+     color: white;
+     background-color: #26547c;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     box-shadow: 0 10px 6px -6px #777;
+}
+body nav {
+    flex: 4 1 500px;
+}
+
+body nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+body nav li {
+    padding: 1rem;
+}
+
+body nav li a {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease;
+    padding: 0.2rem:
+}
+
+body nav li a:hover{
+    color: yellow;
+    font-size: 1.6rem;
+}
+
+body main form div{
+    padding: 0.2rem;
+}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %} 首頁 ｜Login Exp{% endblock %}
+{% block content %}
+    <h3>{{current_user.staff_name}} {{current_user.staff_position}}，歡迎回來</h3>
+
+    <div class="medical_records_system">
+        <h3>電子病歷系統</h3>
+        <a href="#"><p>電子病歷系統管理</a>
+    </div>
+    <div class="project_system">
+        <h3>計劃管理系統</h3>
+        <a href="{{url_for('diabetes_home')}}"><p>糖尿病照護整合方案</a>
+        <a href="#"><p>初期腎臟病照護整合方案</a>
+        <a href="#"><p>居家醫療照護整合方案</a>
+    </div>
+{% endblock %}

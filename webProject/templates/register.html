@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %} 首頁 ｜Login Exp{% endblock %}
+{% block content %}
+        <form method="POST">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+    {{ form.user_account.label }}
+    {{ form.user_account(class_="form-control form-control-lg") }}
+    </div>
+    <div class="form-group">
+    {{form.user_name.label}}
+    {{form.user_name(class_="form-control form-control-lg") }}
+    </div>
+    <div class="form-group">
+    {{ form.user_password.label }}
+    {{ form.user_password(class_="form-control form-control-lg") }}
+    </div>
+    <div class="form-group">
+    {{ form.born_date.label }}
+    {{ form.born_date(class_="form-control form-control-lg") }}
+    </div>
+    <div class="form-group">
+    {{ form.telephone.label }}
+    {{ form.telephone(class_="form-control form-control-lg") }}
+    </div>
+    <div class="form-group">
+    {{ form.address.label }}
+    {{ form.address(class_="form-control form-control-lg") }}
+    </div>
+    <div class="form-group">
+    {{ form.user_type.label }}
+    {{ form.user_type(class_="form-control form-control-lg") }}
+    </div>
+    {{form.submit(class_="btn btn-primary btn-lg")}}
+    </form>
+{% endblock %}
+
+
+
